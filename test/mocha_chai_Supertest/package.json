@@ -1,0 +1,18 @@
+{
+  "name": "mocha_chai_supertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.test.js",
+  "scripts": {
+    "test": "mocha server.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.4"
+  }
+}

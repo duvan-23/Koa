@@ -1,0 +1,124 @@
+query {
+  getMensajes {
+    id
+		author {
+		  id
+      nombre
+      apellido
+      edad
+      alias
+      avatar
+		}
+    title {
+      message
+      fecha
+    }
+  }
+}
+
+# query {
+#   getProductos {
+#     id
+# 		nombre
+#     precio
+#     foto
+#   }
+# }
+# query{
+#   buscarUsuario(username:"Juan"){
+#     username
+#     password
+#     direccion
+#     contador
+#   }
+# }
+# mutation{
+#   actualizarUsuarioCant(username:"Juan",contador:25){
+#     username
+#     password
+#     direccion
+#     contador
+#   }
+# }
+
+# mutation{
+#   crearUsuario(datos:{
+#     username: "Pedro4",
+#     password: "$2b$10$UK2YuHyjMSM7rZEmwjEseuH.2F3GyxF/gLKQRdMz/4OjvmZmviKKG",
+#     direccion: "crra 22",
+#     contador: 1
+#   }){
+#     username
+#     password
+#     direccion
+#     contador
+#   }
+# }
+
+# mutation{
+#   crearMensaje(datos:{
+#     author: {
+#     	id: "duvan@hotmail.com",
+#     	nombre: "Duvan",
+#     	apellido: "Caicedo",
+#     	edad: 24,
+#     	alias: "duvan",
+#     	avatar: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-128.png"
+#     },
+#     text: {
+#       message: "Buen día",
+#       fecha: "12/09/2022 8:40:28"
+#     }
+#   }){
+#     id
+#     author{
+#       id
+#       nombre
+#       apellido
+#       edad
+#       alias
+#       avatar
+#     }
+#     text{
+#       message
+#       fecha
+#     }
+#   }
+# }
+
+# mutation{
+#   crearProducto(datos:{
+#     nombre:"Barco5",
+#     precio:2200,
+#     foto: "https://cdn-icons-png.flaticon.com/512/840/840081.png"
+#   }){
+#     id 
+#     nombre
+#     precio
+#     foto
+#   }
+# }
+
+# mutation{
+#   eliminarProducto(id:2){
+#     id
+#     nombre
+#     precio
+#     foto
+#   }
+# }
+
+# mutation{
+#   actualizarProducto(datos:{
+#     nombre:"Barco nivel 3",
+#     precio:3400,
+#     foto: "https://cdn-icons-png.flaticon.com/512/840/840081.png"
+#   },
+#   id:27
+#   ){
+#     id 
+#     nombre
+#     precio
+#     foto
+#   }
+# }
