@@ -1,6 +1,6 @@
 // const RecordatoriosApi = require("../api/RecordatoriosApi.js");
 
-const{graphqlHTTP}= require("koa-graphql");
+const{graphqlHTTP}= require("express-graphql");
 const {buildSchema}= require("graphql");
 const services = require( '../negocio/negocio.js');
 
